@@ -34,7 +34,10 @@ class CustomQueue:
 
     @property
     def is_empty(self):
-        return self._count == 0
+        if self._count == 0:
+            return True
+        else:
+            return False
 
     @property
     def count(self):
